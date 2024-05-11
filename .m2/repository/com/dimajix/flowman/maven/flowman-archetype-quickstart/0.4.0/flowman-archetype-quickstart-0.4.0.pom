@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dimajix.flowman.maven</groupId>
+  <artifactId>flowman-archetype-quickstart</artifactId>
+  <version>0.4.0</version>
+  <packaging>maven-archetype</packaging>
+  <name>Flowman Quickstart Archetype</name>
+  <description>Maven archetype for a Flowman quickstart project</description>
+  <url>https://flowman.io/flowman-archetype-quickstart</url>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Kaya Kupferschmidt</name>
+      <email>k.kupferschmidt@dimajix.de</email>
+      <organization>dimajix</organization>
+      <organizationUrl>https://www.dimajix.de</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/dimajix/flowman-maven.git/flowman-archetype-quickstart</connection>
+    <developerConnection>scm:git:ssh://github.com/dimajix/flowman-maven.git/flowman-archetype-quickstart</developerConnection>
+    <url>https://github.com/dimajix/flowman-maven/tree/main/flowman-archetype-quickstart</url>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.13</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
